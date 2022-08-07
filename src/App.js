@@ -39,7 +39,7 @@ function Layout(props) {
     <div className="border">
       <Link to="/">首页</Link>
       <Link to="/user">用户中心</Link>
-      {/* <Link to="/login">登录</Link> */}
+      <Link to="/login">登录</Link>
       <Link to="/about">关于</Link>
 
       <Outlet />
