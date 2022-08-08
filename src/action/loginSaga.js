@@ -1,5 +1,5 @@
-import { call, put, takeEvery, take, fork } from 'redux-saga/effects';
-// import { call, put, take, fork } from '../saga-nut/effects';
+// import { call, put, takeEvery, take, fork } from 'redux-saga/effects';
+import { call, put, take, fork } from '../saga-nut/effects';
 
 import LoginService from '../service/login';
 import {
