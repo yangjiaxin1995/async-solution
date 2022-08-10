@@ -1,8 +1,8 @@
 import proc from './proc';
 
-const runSaga = ({ getState, dispatch }, saga, ...args) => {
+const runSaga = ({ channel, getState, dispatch }, saga, ...args) => {
   const iterator = saga(...args);
-  proc({ getState, dispatch }, iterator);
+  proc({ channel, getState, dispatch }, iterator);
 };
 
 export default runSaga;
