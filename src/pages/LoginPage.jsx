@@ -9,6 +9,7 @@ const LoginPage = () => {
   const location = useLocation();
 
   const from = location.state?.from.pathname || '/';
+  
   if (user.isLogin) {
     return <Navigate to={from} replace={true} />;
   }
